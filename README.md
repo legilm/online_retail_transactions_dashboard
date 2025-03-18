@@ -34,7 +34,7 @@ The dashboard will help the company:
 
 ### 1️⃣ Get & Store the Data
 1. **Download** the Online Retail dataset
-2. Save it as `online_retail.csv`
+2. Save it as `online_retail_cleaned.csv`
 3. Store it in the `/data/` folder in the repository
 
 ### 2️⃣ Import & Clean
