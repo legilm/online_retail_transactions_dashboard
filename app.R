@@ -13,7 +13,7 @@ library(waiter)
 retail_data <- rio::import("data/online_retail_cleaned.csv")
 
 ui <- dashboardPage(
-  autoWaiter(),
+  # autoWaiter(),
   dashboardHeader(title = "Online Retail Transactions"),
   dashboardSidebar(
     sidebarMenu(
@@ -92,25 +92,23 @@ ui <- dashboardPage(
     
     # Plotly - Sales Trends
     output$plotly <- renderPlotly({
-      data <- filtered_data() %>%
-        arrange(InvoiceDate) %>%
-        group_by(InvoiceDate) %>%
+
+      data <- retail_data |> 
+        arrange(InvoiceDate) |> 
+        group_by(InvoiceDate) |> 
         summarize(Revenue = sum(Revenue))
-      plot_ly(
-        data,
-        x = ~InvoiceDate,
-        y = ~Revenue,
-        type = "scatter",
-        mode = "lines",
-        hovertemplate = "Date: %{x}<br>Revenue: %{y:.2f}"
-      ) %>%
+      plot_ly(data,
+              x = ~InvoiceDate,
+              y = ~Revenue,
+              type = "scatter",
+              mode = "lines",
+              hovertemplate = "Date: %{x}<br>Revenue: %{y:.2f}"
+      ) |> 
         layout(
-          title = "Revenue over Time",
-          xaxis_title = "Invoice Date",
-          yaxis_title = "Revenue",
-          xaxis_type = "date",
-          hovermode = "x unified",
-          xaxis_rangeslider_visible = FALSE
+          title = list(text = "Revenue over Time"),
+          xaxis = list(title = "Invoice Date", type = "date", rangeslider = list(visible = FALSE)),
+          yaxis = list(title = "Revenue"),
+          hovermode = "x unified"
         )
     })
     
