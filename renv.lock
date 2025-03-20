@@ -47,121 +47,6 @@
       "Maintainer": "Joe Cheng <joe@posit.co>",
       "Repository": "CRAN"
     },
-    "Highcharter": {
-      "Package": "highcharter",
-      "Version": "0.9.4",
-      "Source": "Repository",
-      "Type": "Package",
-      "Title": "A Wrapper for the 'Highcharts' Library",
-      "Description": "A wrapper for the 'Highcharts' library including shortcut functions to plot R objects. 'Highcharts' <https://www.highcharts.com/> is a charting library offering numerous chart types with a simple configuration syntax.",
-      "Authors@R": "c( person(\"Joshua\", \"Kunst\", role = c(\"aut\", \"cre\"), email = \"jbkunst@gmail.com\"), person(\"Nuno\", \"Agostinho\", role = c(\"ctb\"), comment  = \"hchart.survfit, densities and hc_add_series_scatter\"), person(\"Danton\", \"Noriega\", role = c(\"ctb\"), comment  = \"hcaes_\"), person(\"Martin John \", \"Hadley\", role = c(\"ctb\"), comment  = \"hc_add_event_point improvement\"), person(\"Eduardo\", \"Flores\", role = c(\"ctb\"), comment  = \"First version hc_add_series_df_tidy\"), person(\"Dean\", \"Kilfoyle\", role = c(\"ctb\"), comment  = \"First version hc_add_series_boxplot\"), person(\"Adline\", \"Dsilva\", role = c(\"ctb\"), comment  = \"First version Matrix heatmap\"), person(\"Kamil\", \"Slowikowski\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0002-2843-6370\")), person(\"Christian\", \"Minich\", role = c(\"ctb\"), comment  = \"hcaes mutate_mapping improvement\"), person(\"Jonathan\", \"Armond\", role = c(\"ctb\"), comment = \"mutate_mapping bugfix\"), person(\"David\", \"Breuer\", role = c(\"ctb\"), comment = \"download_map_data quiet parameter\"), person(\"Mauricio\", \"Vargas\", role = c(\"ctb\"), comment = \"tests and gh-actions\"), person(\"Michael\", \"Yan\", role = c(\"ctb\"), comment = \"Motivational example for treemap/sunburst data helper\"), person(\"Bart\", \"Oortwijn\", role = c(\"ctb\"), comment = \"rjson option, hc_add_yAxis, and GH issues collaborator\"), person(\"Paul\", \"Campbell\", role = c(\"ctb\"), comment = \"additional proxy methods\") )",
-      "URL": "https://jkunst.com/highcharter/, https://github.com/jbkunst/highcharter",
-      "BugReports": "https://github.com/jbkunst/highcharter/issues",
-      "License": "MIT + file LICENSE",
-      "RoxygenNote": "7.1.2",
-      "Encoding": "UTF-8",
-      "Depends": [
-        "R (>= 2.10)"
-      ],
-      "Imports": [
-        "htmlwidgets",
-        "magrittr",
-        "purrr",
-        "rlist",
-        "assertthat",
-        "zoo",
-        "dplyr (>= 1.0.0)",
-        "tibble (>= 1.1)",
-        "stringr (>= 1.3.0)",
-        "broom",
-        "xts",
-        "quantmod",
-        "tidyr",
-        "htmltools",
-        "jsonlite",
-        "igraph",
-        "lubridate",
-        "yaml",
-        "rlang (>= 0.1.1)",
-        "rjson"
-      ],
-      "Suggests": [
-        "knitr",
-        "rmarkdown",
-        "survival",
-        "ggplot2",
-        "httr",
-        "viridisLite",
-        "shiny",
-        "MASS",
-        "gapminder",
-        "forecast",
-        "geojsonio",
-        "testthat",
-        "covr",
-        "spelling"
-      ],
-      "LazyData": "true",
-      "Language": "en-US",
-      "NeedsCompilation": "no",
-      "Author": "Joshua Kunst [aut, cre], Nuno Agostinho [ctb] (hchart.survfit, densities and hc_add_series_scatter), Danton Noriega [ctb] (hcaes_), Martin John Hadley [ctb] (hc_add_event_point improvement), Eduardo Flores [ctb] (First version hc_add_series_df_tidy), Dean Kilfoyle [ctb] (First version hc_add_series_boxplot), Adline Dsilva [ctb] (First version Matrix heatmap), Kamil Slowikowski [ctb] (<https://orcid.org/0000-0002-2843-6370>), Christian Minich [ctb] (hcaes mutate_mapping improvement), Jonathan Armond [ctb] (mutate_mapping bugfix), David Breuer [ctb] (download_map_data quiet parameter), Mauricio Vargas [ctb] (tests and gh-actions), Michael Yan [ctb] (Motivational example for treemap/sunburst data helper), Bart Oortwijn [ctb] (rjson option, hc_add_yAxis, and GH issues collaborator), Paul Campbell [ctb] (additional proxy methods)",
-      "Maintainer": "Joshua Kunst <jbkunst@gmail.com>",
-      "Repository": "CRAN"
-    },
-    "Leaflet": {
-      "Package": "leaflet",
-      "Version": "2.2.2",
-      "Source": "Repository",
-      "Type": "Package",
-      "Title": "Create Interactive Web Maps with the JavaScript 'Leaflet' Library",
-      "Authors@R": "c( person(\"Joe\", \"Cheng\", , \"joe@posit.co\", role = c(\"aut\", \"cre\")), person(\"Barret\", \"Schloerke\", , \"barret@posit.co\", role = \"aut\", comment = c(ORCID = \"0000-0001-9986-114X\")), person(\"Bhaskar\", \"Karambelkar\", role = \"aut\"), person(\"Yihui\", \"Xie\", role = \"aut\"), person(\"Hadley\", \"Wickham\", role = \"ctb\"), person(\"Kenton\", \"Russell\", role = \"ctb\"), person(\"Kent\", \"Johnson\", role = \"ctb\"), person(\"Vladimir\", \"Agafonkin\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet library\"), person(\"CloudMade\", role = \"cph\", comment = \"Leaflet library\"), person(\"Leaflet contributors\", role = \"ctb\", comment = \"Leaflet library\"), person(\"Brandon Copeland\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-measure plugin\"), person(\"Joerg Dietrich\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.Terminator plugin\"), person(\"Benjamin Becquet\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.MagnifyingGlass plugin\"), person(\"Norkart AS\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.MiniMap plugin\"), person(\"L. Voogdt\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.awesome-markers plugin\"), person(\"Daniel Montague\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.EasyButton plugin\"), person(\"Kartena AB\", role = c(\"ctb\", \"cph\"), comment = \"Proj4Leaflet plugin\"), person(\"Robert Kajic\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-locationfilter plugin\"), person(\"Mapbox\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-omnivore plugin\"), person(\"Michael Bostock\", role = c(\"ctb\", \"cph\"), comment = \"topojson\"), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
-      "Description": "Create and customize interactive maps using the 'Leaflet' JavaScript library and the 'htmlwidgets' package. These maps can be used directly from the R console, from 'RStudio', in Shiny applications and R Markdown documents.",
-      "License": "GPL-3",
-      "URL": "https://rstudio.github.io/leaflet/, https://github.com/rstudio/leaflet",
-      "BugReports": "https://github.com/rstudio/leaflet/issues",
-      "Depends": [
-        "R (>= 3.1.0)"
-      ],
-      "Imports": [
-        "crosstalk",
-        "htmltools",
-        "htmlwidgets (>= 1.5.4)",
-        "jquerylib",
-        "leaflet.providers (>= 2.0.0)",
-        "magrittr",
-        "methods",
-        "png",
-        "raster (>= 3.6.3)",
-        "RColorBrewer",
-        "scales (>= 1.0.0)",
-        "sp",
-        "stats",
-        "viridisLite",
-        "xfun"
-      ],
-      "Suggests": [
-        "knitr",
-        "maps",
-        "purrr",
-        "R6",
-        "RJSONIO",
-        "rmarkdown",
-        "s2",
-        "sf (>= 0.9-6)",
-        "shiny",
-        "terra",
-        "testthat (>= 3.0.0)"
-      ],
-      "Config/testthat/edition": "3",
-      "Config/Needs/website": "dplyr, geojsonio, ncdf4, tidyverse/tidytemplate",
-      "Encoding": "UTF-8",
-      "LazyData": "true",
-      "RoxygenNote": "7.3.1",
-      "NeedsCompilation": "no",
-      "Author": "Joe Cheng [aut, cre], Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>), Bhaskar Karambelkar [aut], Yihui Xie [aut], Hadley Wickham [ctb], Kenton Russell [ctb], Kent Johnson [ctb], Vladimir Agafonkin [ctb, cph] (Leaflet library), CloudMade [cph] (Leaflet library), Leaflet contributors [ctb] (Leaflet library), Brandon Copeland [ctb, cph] (leaflet-measure plugin), Joerg Dietrich [ctb, cph] (Leaflet.Terminator plugin), Benjamin Becquet [ctb, cph] (Leaflet.MagnifyingGlass plugin), Norkart AS [ctb, cph] (Leaflet.MiniMap plugin), L. Voogdt [ctb, cph] (Leaflet.awesome-markers plugin), Daniel Montague [ctb, cph] (Leaflet.EasyButton plugin), Kartena AB [ctb, cph] (Proj4Leaflet plugin), Robert Kajic [ctb, cph] (leaflet-locationfilter plugin), Mapbox [ctb, cph] (leaflet-omnivore plugin), Michael Bostock [ctb, cph] (topojson), Posit Software, PBC [cph, fnd]",
-      "Maintainer": "Joe Cheng <joe@posit.co>",
-      "Repository": "CRAN"
-    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-64",
@@ -728,6 +613,49 @@
       "NeedsCompilation": "no",
       "Author": "David Robinson [aut], Alex Hayes [aut] (<https://orcid.org/0000-0002-4985-5160>), Simon Couch [aut, cre] (<https://orcid.org/0000-0001-5676-5107>), Posit Software, PBC [cph, fnd], Indrajeet Patil [ctb] (<https://orcid.org/0000-0003-1995-6531>), Derek Chiu [ctb], Matthieu Gomez [ctb], Boris Demeshev [ctb], Dieter Menne [ctb], Benjamin Nutter [ctb], Luke Johnston [ctb], Ben Bolker [ctb], Francois Briatte [ctb], Jeffrey Arnold [ctb], Jonah Gabry [ctb], Luciano Selzer [ctb], Gavin Simpson [ctb], Jens Preussner [ctb], Jay Hesselberth [ctb], Hadley Wickham [ctb], Matthew Lincoln [ctb], Alessandro Gasparini [ctb], Lukasz Komsta [ctb], Frederick Novometsky [ctb], Wilson Freitas [ctb], Michelle Evans [ctb], Jason Cory Brunson [ctb], Simon Jackson [ctb], Ben Whalley [ctb], Karissa Whiting [ctb], Yves Rosseel [ctb], Michael Kuehn [ctb], Jorge Cimentada [ctb], Erle Holgersen [ctb], Karl Dunkle Werner [ctb] (<https://orcid.org/0000-0003-0523-7309>), Ethan Christensen [ctb], Steven Pav [ctb], Paul PJ [ctb], Ben Schneider [ctb], Patrick Kennedy [ctb], Lily Medina [ctb], Brian Fannin [ctb], Jason Muhlenkamp [ctb], Matt Lehman [ctb], Bill Denney [ctb] (<https://orcid.org/0000-0002-5759-428X>), Nic Crane [ctb], Andrew Bates [ctb], Vincent Arel-Bundock [ctb] (<https://orcid.org/0000-0003-2042-7063>), Hideaki Hayashi [ctb], Luis Tobalina [ctb], Annie Wang [ctb], Wei Yang Tham [ctb], Clara Wang [ctb], Abby Smith [ctb] (<https://orcid.org/0000-0002-3207-0375>), Jasper Cooper [ctb] (<https://orcid.org/0000-0002-8639-3188>), E Auden Krauska [ctb] (<https://orcid.org/0000-0002-1466-5850>), Alex Wang [ctb], Malcolm Barrett [ctb] (<https://orcid.org/0000-0003-0299-5825>), Charles Gray [ctb] (<https://orcid.org/0000-0002-9978-011X>), Jared Wilber [ctb], Vilmantas Gegzna [ctb] (<https://orcid.org/0000-0002-9500-5167>), Eduard Szoecs [ctb], Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>), Angus Moore [ctb], Nick Williams [ctb], Marius Barth [ctb] (<https://orcid.org/0000-0002-3421-6665>), Bruna Wundervald [ctb] (<https://orcid.org/0000-0001-8163-220X>), Joyce Cahoon [ctb] (<https://orcid.org/0000-0001-7217-4702>), Grant McDermott [ctb] (<https://orcid.org/0000-0001-7883-8573>), Kevin Zarca [ctb], Shiro Kuriwaki [ctb] (<https://orcid.org/0000-0002-5687-2647>), Lukas Wallrich [ctb] (<https://orcid.org/0000-0003-2121-5177>), James Martherus [ctb] (<https://orcid.org/0000-0002-8285-3300>), Chuliang Xiao [ctb] (<https://orcid.org/0000-0002-8466-9398>), Joseph Larmarange [ctb], Max Kuhn [ctb], Michal Bojanowski [ctb], Hakon Malmedal [ctb], Clara Wang [ctb], Sergio Oller [ctb], Luke Sonnet [ctb], Jim Hester [ctb], Ben Schneider [ctb], Bernie Gray [ctb] (<https://orcid.org/0000-0001-9190-6032>), Mara Averick [ctb], Aaron Jacobs [ctb], Andreas Bender [ctb], Sven Templer [ctb], Paul-Christian Buerkner [ctb], Matthew Kay [ctb], Erwan Le Pennec [ctb], Johan Junkka [ctb], Hao Zhu [ctb], Benjamin Soltoff [ctb], Zoe Wilkinson Saldana [ctb], Tyler Littlefield [ctb], Charles T. Gray [ctb], Shabbh E. Banks [ctb], Serina Robinson [ctb], Roger Bivand [ctb], Riinu Ots [ctb], Nicholas Williams [ctb], Nina Jakobsen [ctb], Michael Weylandt [ctb], Lisa Lendway [ctb], Karl Hailperin [ctb], Josue Rodriguez [ctb], Jenny Bryan [ctb], Chris Jarvis [ctb], Greg Macfarlane [ctb], Brian Mannakee [ctb], Drew Tyre [ctb], Shreyas Singh [ctb], Laurens Geffert [ctb], Hong Ooi [ctb], Henrik Bengtsson [ctb], Eduard Szocs [ctb], David Hugh-Jones [ctb], Matthieu Stigler [ctb], Hugo Tavares [ctb] (<https://orcid.org/0000-0001-9373-2726>), R. Willem Vervoort [ctb], Brenton M. Wiernik [ctb], Josh Yamamoto [ctb], Jasme Lee [ctb], Taren Sanders [ctb] (<https://orcid.org/0000-0002-4504-6008>), Ilaria Prosdocimi [ctb] (<https://orcid.org/0000-0001-8565-094X>), Daniel D. Sjoberg [ctb] (<https://orcid.org/0000-0003-0862-2018>), Alex Reinhart [ctb] (<https://orcid.org/0000-0002-6658-514X>)",
       "Maintainer": "Simon Couch <simon.couch@posit.co>",
+      "Repository": "CRAN"
+    },
+    "bs4Dash": {
+      "Package": "bs4Dash",
+      "Version": "2.3.4",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "A 'Bootstrap 4' Version of 'shinydashboard'",
+      "Authors@R": "c( person(\"David\", \"Granjon\", email = \"dgranjon@ymail.com\", role = c(\"aut\", \"cre\")), person(family = \"RinteRface\", role = \"cph\"), person(family = \"Almasaeed Studio\", role = c(\"ctb\", \"cph\"), comment = \"AdminLTE3 theme for Bootstrap 4\"), person(\"Winston\", \"Chang\", role = c(\"ctb\", \"cph\"), comment = \"Utils functions from shinydashboard\"))",
+      "Maintainer": "David Granjon <dgranjon@ymail.com>",
+      "Description": "Make 'Bootstrap 4' Shiny dashboards. Use the full power of 'AdminLTE3', a dashboard template built on top of 'Bootstrap 4'  <https://github.com/ColorlibHQ/AdminLTE>.",
+      "URL": "https://github.com/RinteRface/bs4Dash, https://bs4dash.rinterface.com/",
+      "BugReports": "https://github.com/RinteRface/bs4Dash/issues",
+      "License": "GPL (>= 2) | file LICENSE",
+      "Imports": [
+        "shiny (>= 1.6.0)",
+        "htmltools (>= 0.5.1.1)",
+        "jsonlite (>= 0.9.16)",
+        "fresh",
+        "waiter (>= 0.2.3)",
+        "httpuv (>= 1.5.2)",
+        "lifecycle",
+        "bslib (>= 0.2.4)",
+        "httr"
+      ],
+      "Suggests": [
+        "knitr",
+        "rmarkdown",
+        "testthat (>= 2.1.0)",
+        "golem",
+        "DT",
+        "thematic (>= 0.1.2)"
+      ],
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "VignetteBuilder": "knitr",
+      "Collate": "'feedbacks.R' 'useful-items.R' 'tabs.R' 'render-functions.R' 'cards.R' 'dashboardSidebar.R' 'dashboardBody.R' 'dashboardFooter.R' 'dashboardControlbar.R' 'dashboardHeader.R' 'dashboardPage.R' 'aliases.R' 'auto-color.R' 'bs4Dash-package.r' 'bs4DashGallery.R' 'deps.R' 'grid.R' 'inputs.R' 'skinSelector.R' 'utils.R'",
+      "RdMacros": "lifecycle",
+      "Depends": [
+        "R (>= 2.10)"
+      ],
+      "NeedsCompilation": "no",
+      "Author": "David Granjon [aut, cre], RinteRface [cph], Almasaeed Studio [ctb, cph] (AdminLTE3 theme for Bootstrap 4), Winston Chang [ctb, cph] (Utils functions from shinydashboard)",
       "Repository": "CRAN"
     },
     "bslib": {
@@ -1486,6 +1414,41 @@
       "Maintainer": "R Core Team <R-core@R-project.org>",
       "Repository": "CRAN"
     },
+    "fresh": {
+      "Package": "fresh",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Title": "Create Custom 'Bootstrap' Themes to Use in 'Shiny'",
+      "Authors@R": "c( person(\"Victor\", \"Perrier\", email = \"victor.perrier@dreamrs.fr\", role = c(\"aut\", \"cre\", \"cph\")), person(\"Fanny\", \"Meyer\", role = \"aut\"), person(\"Thomas\", \"Park\", role = c(\"ctb\", \"cph\"), comment = \"Bootswatch themes\"), person(\"Mark\", \"Otto\", role = \"ctb\", comment = \"Bootstrap library\"), person(\"Jacob\", \"Thornton\", role = \"ctb\", comment = \"Bootstrap library\"), person(family = \"Bootstrap contributors\", role = \"ctb\", comment = \"Bootstrap library\"), person(family = \"Twitter, Inc\", role = \"cph\", comment = \"Bootstrap library\"), person(\"onkbear\", role = c(\"ctb\", \"cph\"), comment = \"admin-lte-2-sass\"), person(family = \"Colorlib\", role = c(\"ctb\", \"cph\"), comment = \"AdminLTE\"))",
+      "Description": "Customize 'Bootstrap' and 'Bootswatch' themes, like colors, fonts, grid layout,  to use in 'Shiny' applications, 'rmarkdown' documents and 'flexdashboard'.",
+      "URL": "https://github.com/dreamRs/fresh",
+      "BugReports": "https://github.com/dreamRs/fresh/issues",
+      "License": "GPL-3",
+      "Encoding": "UTF-8",
+      "Imports": [
+        "bslib",
+        "htmltools",
+        "rstudioapi",
+        "sass",
+        "shiny"
+      ],
+      "Suggests": [
+        "bsicons",
+        "shinyWidgets",
+        "shinydashboard",
+        "bs4Dash",
+        "knitr",
+        "rmarkdown",
+        "testthat (>= 2.1.0)",
+        "covr"
+      ],
+      "RoxygenNote": "7.3.1",
+      "VignetteBuilder": "knitr",
+      "NeedsCompilation": "no",
+      "Author": "Victor Perrier [aut, cre, cph], Fanny Meyer [aut], Thomas Park [ctb, cph] (Bootswatch themes), Mark Otto [ctb] (Bootstrap library), Jacob Thornton [ctb] (Bootstrap library), Bootstrap contributors [ctb] (Bootstrap library), Twitter, Inc [cph] (Bootstrap library), onkbear [ctb, cph] (admin-lte-2-sass), Colorlib [ctb, cph] (AdminLTE)",
+      "Maintainer": "Victor Perrier <victor.perrier@dreamrs.fr>",
+      "Repository": "CRAN"
+    },
     "fs": {
       "Package": "fs",
       "Version": "1.6.5",
@@ -1757,6 +1720,67 @@
       "NeedsCompilation": "yes",
       "Author": "Hadley Wickham [aut, cre], Evan Miller [aut, cph] (Author of included ReadStat code), Danny Smith [aut], Posit Software, PBC [cph, fnd]",
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
+      "Repository": "CRAN"
+    },
+    "highcharter": {
+      "Package": "highcharter",
+      "Version": "0.9.4",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "A Wrapper for the 'Highcharts' Library",
+      "Description": "A wrapper for the 'Highcharts' library including shortcut functions to plot R objects. 'Highcharts' <https://www.highcharts.com/> is a charting library offering numerous chart types with a simple configuration syntax.",
+      "Authors@R": "c( person(\"Joshua\", \"Kunst\", role = c(\"aut\", \"cre\"), email = \"jbkunst@gmail.com\"), person(\"Nuno\", \"Agostinho\", role = c(\"ctb\"), comment  = \"hchart.survfit, densities and hc_add_series_scatter\"), person(\"Danton\", \"Noriega\", role = c(\"ctb\"), comment  = \"hcaes_\"), person(\"Martin John \", \"Hadley\", role = c(\"ctb\"), comment  = \"hc_add_event_point improvement\"), person(\"Eduardo\", \"Flores\", role = c(\"ctb\"), comment  = \"First version hc_add_series_df_tidy\"), person(\"Dean\", \"Kilfoyle\", role = c(\"ctb\"), comment  = \"First version hc_add_series_boxplot\"), person(\"Adline\", \"Dsilva\", role = c(\"ctb\"), comment  = \"First version Matrix heatmap\"), person(\"Kamil\", \"Slowikowski\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0002-2843-6370\")), person(\"Christian\", \"Minich\", role = c(\"ctb\"), comment  = \"hcaes mutate_mapping improvement\"), person(\"Jonathan\", \"Armond\", role = c(\"ctb\"), comment = \"mutate_mapping bugfix\"), person(\"David\", \"Breuer\", role = c(\"ctb\"), comment = \"download_map_data quiet parameter\"), person(\"Mauricio\", \"Vargas\", role = c(\"ctb\"), comment = \"tests and gh-actions\"), person(\"Michael\", \"Yan\", role = c(\"ctb\"), comment = \"Motivational example for treemap/sunburst data helper\"), person(\"Bart\", \"Oortwijn\", role = c(\"ctb\"), comment = \"rjson option, hc_add_yAxis, and GH issues collaborator\"), person(\"Paul\", \"Campbell\", role = c(\"ctb\"), comment = \"additional proxy methods\") )",
+      "URL": "https://jkunst.com/highcharter/, https://github.com/jbkunst/highcharter",
+      "BugReports": "https://github.com/jbkunst/highcharter/issues",
+      "License": "MIT + file LICENSE",
+      "RoxygenNote": "7.1.2",
+      "Encoding": "UTF-8",
+      "Depends": [
+        "R (>= 2.10)"
+      ],
+      "Imports": [
+        "htmlwidgets",
+        "magrittr",
+        "purrr",
+        "rlist",
+        "assertthat",
+        "zoo",
+        "dplyr (>= 1.0.0)",
+        "tibble (>= 1.1)",
+        "stringr (>= 1.3.0)",
+        "broom",
+        "xts",
+        "quantmod",
+        "tidyr",
+        "htmltools",
+        "jsonlite",
+        "igraph",
+        "lubridate",
+        "yaml",
+        "rlang (>= 0.1.1)",
+        "rjson"
+      ],
+      "Suggests": [
+        "knitr",
+        "rmarkdown",
+        "survival",
+        "ggplot2",
+        "httr",
+        "viridisLite",
+        "shiny",
+        "MASS",
+        "gapminder",
+        "forecast",
+        "geojsonio",
+        "testthat",
+        "covr",
+        "spelling"
+      ],
+      "LazyData": "true",
+      "Language": "en-US",
+      "NeedsCompilation": "no",
+      "Author": "Joshua Kunst [aut, cre], Nuno Agostinho [ctb] (hchart.survfit, densities and hc_add_series_scatter), Danton Noriega [ctb] (hcaes_), Martin John Hadley [ctb] (hc_add_event_point improvement), Eduardo Flores [ctb] (First version hc_add_series_df_tidy), Dean Kilfoyle [ctb] (First version hc_add_series_boxplot), Adline Dsilva [ctb] (First version Matrix heatmap), Kamil Slowikowski [ctb] (<https://orcid.org/0000-0002-2843-6370>), Christian Minich [ctb] (hcaes mutate_mapping improvement), Jonathan Armond [ctb] (mutate_mapping bugfix), David Breuer [ctb] (download_map_data quiet parameter), Mauricio Vargas [ctb] (tests and gh-actions), Michael Yan [ctb] (Motivational example for treemap/sunburst data helper), Bart Oortwijn [ctb] (rjson option, hc_add_yAxis, and GH issues collaborator), Paul Campbell [ctb] (additional proxy methods)",
+      "Maintainer": "Joshua Kunst <jbkunst@gmail.com>",
       "Repository": "CRAN"
     },
     "highr": {
@@ -2310,6 +2334,60 @@
       "NeedsCompilation": "yes",
       "Author": "Hadley Wickham [aut, cre], RStudio [cph]",
       "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+      "Repository": "CRAN"
+    },
+    "leaflet": {
+      "Package": "leaflet",
+      "Version": "2.2.2",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Create Interactive Web Maps with the JavaScript 'Leaflet' Library",
+      "Authors@R": "c( person(\"Joe\", \"Cheng\", , \"joe@posit.co\", role = c(\"aut\", \"cre\")), person(\"Barret\", \"Schloerke\", , \"barret@posit.co\", role = \"aut\", comment = c(ORCID = \"0000-0001-9986-114X\")), person(\"Bhaskar\", \"Karambelkar\", role = \"aut\"), person(\"Yihui\", \"Xie\", role = \"aut\"), person(\"Hadley\", \"Wickham\", role = \"ctb\"), person(\"Kenton\", \"Russell\", role = \"ctb\"), person(\"Kent\", \"Johnson\", role = \"ctb\"), person(\"Vladimir\", \"Agafonkin\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet library\"), person(\"CloudMade\", role = \"cph\", comment = \"Leaflet library\"), person(\"Leaflet contributors\", role = \"ctb\", comment = \"Leaflet library\"), person(\"Brandon Copeland\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-measure plugin\"), person(\"Joerg Dietrich\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.Terminator plugin\"), person(\"Benjamin Becquet\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.MagnifyingGlass plugin\"), person(\"Norkart AS\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.MiniMap plugin\"), person(\"L. Voogdt\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.awesome-markers plugin\"), person(\"Daniel Montague\", role = c(\"ctb\", \"cph\"), comment = \"Leaflet.EasyButton plugin\"), person(\"Kartena AB\", role = c(\"ctb\", \"cph\"), comment = \"Proj4Leaflet plugin\"), person(\"Robert Kajic\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-locationfilter plugin\"), person(\"Mapbox\", role = c(\"ctb\", \"cph\"), comment = \"leaflet-omnivore plugin\"), person(\"Michael Bostock\", role = c(\"ctb\", \"cph\"), comment = \"topojson\"), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
+      "Description": "Create and customize interactive maps using the 'Leaflet' JavaScript library and the 'htmlwidgets' package. These maps can be used directly from the R console, from 'RStudio', in Shiny applications and R Markdown documents.",
+      "License": "GPL-3",
+      "URL": "https://rstudio.github.io/leaflet/, https://github.com/rstudio/leaflet",
+      "BugReports": "https://github.com/rstudio/leaflet/issues",
+      "Depends": [
+        "R (>= 3.1.0)"
+      ],
+      "Imports": [
+        "crosstalk",
+        "htmltools",
+        "htmlwidgets (>= 1.5.4)",
+        "jquerylib",
+        "leaflet.providers (>= 2.0.0)",
+        "magrittr",
+        "methods",
+        "png",
+        "raster (>= 3.6.3)",
+        "RColorBrewer",
+        "scales (>= 1.0.0)",
+        "sp",
+        "stats",
+        "viridisLite",
+        "xfun"
+      ],
+      "Suggests": [
+        "knitr",
+        "maps",
+        "purrr",
+        "R6",
+        "RJSONIO",
+        "rmarkdown",
+        "s2",
+        "sf (>= 0.9-6)",
+        "shiny",
+        "terra",
+        "testthat (>= 3.0.0)"
+      ],
+      "Config/testthat/edition": "3",
+      "Config/Needs/website": "dplyr, geojsonio, ncdf4, tidyverse/tidytemplate",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "7.3.1",
+      "NeedsCompilation": "no",
+      "Author": "Joe Cheng [aut, cre], Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>), Bhaskar Karambelkar [aut], Yihui Xie [aut], Hadley Wickham [ctb], Kenton Russell [ctb], Kent Johnson [ctb], Vladimir Agafonkin [ctb, cph] (Leaflet library), CloudMade [cph] (Leaflet library), Leaflet contributors [ctb] (Leaflet library), Brandon Copeland [ctb, cph] (leaflet-measure plugin), Joerg Dietrich [ctb, cph] (Leaflet.Terminator plugin), Benjamin Becquet [ctb, cph] (Leaflet.MagnifyingGlass plugin), Norkart AS [ctb, cph] (Leaflet.MiniMap plugin), L. Voogdt [ctb, cph] (Leaflet.awesome-markers plugin), Daniel Montague [ctb, cph] (Leaflet.EasyButton plugin), Kartena AB [ctb, cph] (Proj4Leaflet plugin), Robert Kajic [ctb, cph] (leaflet-locationfilter plugin), Mapbox [ctb, cph] (leaflet-omnivore plugin), Michael Bostock [ctb, cph] (topojson), Posit Software, PBC [cph, fnd]",
+      "Maintainer": "Joe Cheng <joe@posit.co>",
       "Repository": "CRAN"
     },
     "leaflet.providers": {
@@ -3526,6 +3604,31 @@
       "Maintainer": "Yihui Xie <xie@yihui.name>",
       "Repository": "CRAN"
     },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.17.1",
+      "Source": "Repository",
+      "Title": "Safely Access the RStudio API",
+      "Description": "Access the RStudio API (if available) and provide informative error messages when it's not.",
+      "Authors@R": "c( person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\"), person(\"JJ\", \"Allaire\", role = c(\"aut\"), email = \"jj@posit.co\"), person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@posit.co\"), person(\"Gary\", \"Ritchie\", role = c(\"aut\"), email = \"gary@posit.co\"), person(family = \"RStudio\", role = \"cph\") )",
+      "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rstudio.github.io/rstudioapi/, https://github.com/rstudio/rstudioapi",
+      "BugReports": "https://github.com/rstudio/rstudioapi/issues",
+      "RoxygenNote": "7.3.2",
+      "Suggests": [
+        "testthat",
+        "knitr",
+        "rmarkdown",
+        "clipr",
+        "covr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Kevin Ushey [aut, cre], JJ Allaire [aut], Hadley Wickham [aut], Gary Ritchie [aut], RStudio [cph]",
+      "Repository": "CRAN"
+    },
     "sass": {
       "Package": "sass",
       "Version": "0.4.9",
@@ -3673,6 +3776,110 @@
       "NeedsCompilation": "no",
       "Author": "Winston Chang [aut, cre] (<https://orcid.org/0000-0002-1576-2126>), Joe Cheng [aut], JJ Allaire [aut], Carson Sievert [aut] (<https://orcid.org/0000-0002-4958-2844>), Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>), Yihui Xie [aut], Jeff Allen [aut], Jonathan McPherson [aut], Alan Dipert [aut], Barbara Borges [aut], Posit Software, PBC [cph, fnd], jQuery Foundation [cph] (jQuery library and jQuery UI library), jQuery contributors [ctb, cph] (jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt), jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt), Mark Otto [ctb] (Bootstrap library), Jacob Thornton [ctb] (Bootstrap library), Bootstrap contributors [ctb] (Bootstrap library), Twitter, Inc [cph] (Bootstrap library), Prem Nawaz Khan [ctb] (Bootstrap accessibility plugin), Victor Tsaran [ctb] (Bootstrap accessibility plugin), Dennis Lembree [ctb] (Bootstrap accessibility plugin), Srinivasu Chakravarthula [ctb] (Bootstrap accessibility plugin), Cathy O'Connor [ctb] (Bootstrap accessibility plugin), PayPal, Inc [cph] (Bootstrap accessibility plugin), Stefan Petre [ctb, cph] (Bootstrap-datepicker library), Andrew Rowls [ctb, cph] (Bootstrap-datepicker library), Brian Reavis [ctb, cph] (selectize.js library), Salmen Bejaoui [ctb, cph] (selectize-plugin-a11y library), Denis Ineshin [ctb, cph] (ion.rangeSlider library), Sami Samhuri [ctb, cph] (Javascript strftime library), SpryMedia Limited [ctb, cph] (DataTables library), John Fraser [ctb, cph] (showdown.js library), John Gruber [ctb, cph] (showdown.js library), Ivan Sagalaev [ctb, cph] (highlight.js library), R Core Team [ctb, cph] (tar implementation from R)",
       "Maintainer": "Winston Chang <winston@posit.co>",
+      "Repository": "CRAN"
+    },
+    "shinyFeedback": {
+      "Package": "shinyFeedback",
+      "Version": "0.4.0",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Display User Feedback in Shiny Apps",
+      "Date": "2021-09-23",
+      "Authors@R": "c( person(\"Andy\", \"Merlino\", email = \"andy.merlino@tychobra.com\", role = c(\"aut\", \"cre\")), person(\"Patrick\", \"Howard\", email = \"patrick.howard@tychobra.com\", role = c(\"aut\")))",
+      "Description": "Easily display user feedback in Shiny apps.",
+      "License": "MIT + file LICENSE",
+      "Depends": [
+        "R (>= 3.1.2)"
+      ],
+      "RoxygenNote": "7.1.2",
+      "Encoding": "UTF-8",
+      "Suggests": [
+        "knitr",
+        "rmarkdown"
+      ],
+      "VignetteBuilder": "knitr",
+      "Imports": [
+        "fontawesome",
+        "htmltools",
+        "jsonlite",
+        "shiny"
+      ],
+      "URL": "https://github.com/merlinoa/shinyFeedback",
+      "BugReports": "https://github.com/merlinoa/shinyFeedback/issues",
+      "NeedsCompilation": "no",
+      "Author": "Andy Merlino [aut, cre], Patrick Howard [aut]",
+      "Maintainer": "Andy Merlino <andy.merlino@tychobra.com>",
+      "Repository": "CRAN"
+    },
+    "shinyWidgets": {
+      "Package": "shinyWidgets",
+      "Version": "0.9.0",
+      "Source": "Repository",
+      "Title": "Custom Inputs Widgets for Shiny",
+      "Authors@R": "c( person(\"Victor\", \"Perrier\", email = \"victor.perrier@dreamrs.fr\", role = c(\"aut\", \"cre\", \"cph\")), person(\"Fanny\", \"Meyer\", role = \"aut\"), person(\"David\", \"Granjon\", role = \"aut\"), person(\"Ian\", \"Fellows\", role = \"ctb\", comment = \"Methods for mutating vertical tabs & updateMultiInput\"), person(\"Wil\", \"Davis\", role = \"ctb\", comment = \"numericRangeInput function\"), person(\"Spencer\", \"Matthews\", role = \"ctb\", comment = \"autoNumeric methods\"), person(family = \"JavaScript and CSS libraries authors\", role = c(\"ctb\", \"cph\"), comment = \"All authors are listed in LICENSE.md\") )",
+      "Description": "Collection of custom input controls and user interface components for 'Shiny' applications.  Give your applications a unique and colorful style !",
+      "URL": "https://github.com/dreamRs/shinyWidgets, https://dreamrs.github.io/shinyWidgets/",
+      "BugReports": "https://github.com/dreamRs/shinyWidgets/issues",
+      "License": "GPL-3",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "7.3.2",
+      "Depends": [
+        "R (>= 3.1.0)"
+      ],
+      "Imports": [
+        "bslib",
+        "sass",
+        "shiny (>= 1.6.0)",
+        "htmltools (>= 0.5.1)",
+        "jsonlite",
+        "grDevices",
+        "rlang"
+      ],
+      "Suggests": [
+        "testthat",
+        "covr",
+        "ggplot2",
+        "DT",
+        "scales",
+        "shinydashboard",
+        "shinydashboardPlus"
+      ],
+      "NeedsCompilation": "no",
+      "Author": "Victor Perrier [aut, cre, cph], Fanny Meyer [aut], David Granjon [aut], Ian Fellows [ctb] (Methods for mutating vertical tabs & updateMultiInput), Wil Davis [ctb] (numericRangeInput function), Spencer Matthews [ctb] (autoNumeric methods), JavaScript and CSS libraries authors [ctb, cph] (All authors are listed in LICENSE.md)",
+      "Maintainer": "Victor Perrier <victor.perrier@dreamrs.fr>",
+      "Repository": "CRAN"
+    },
+    "shinycssloaders": {
+      "Package": "shinycssloaders",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Title": "Add Loading Animations to a 'shiny' Output While It's Recalculating",
+      "Authors@R": "c( person(\"Dean\",\"Attali\",email=\"daattali@gmail.com\",role=c(\"aut\",\"cre\"), comment = c(\"Maintainer/developer of shinycssloaders since 2019\", ORCID=\"0000-0002-5645-3493\")), person(\"Andras\",\"Sali\",email=\"andras.sali@alphacruncher.hu\",role=c(\"aut\"),comment=\"Original creator of shinycssloaders package\"), person(\"Luke\",\"Hass\",role=c(\"ctb\",\"cph\"),comment=\"Author of included CSS loader code\") )",
+      "Description": "When a 'Shiny' output (such as a plot, table, map, etc.) is recalculating, it remains  visible but gets greyed out. Using 'shinycssloaders', you can add a loading animation (\"spinner\") to outputs instead. By wrapping a 'Shiny' output in 'withSpinner()', a spinner will automatically appear while the output is recalculating. You can also manually show and hide the spinner, or add a full-page spinner to cover the entire page. See the demo online at <https://daattali.com/shiny/shinycssloaders-demo/>.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/daattali/shinycssloaders, https://daattali.com/shiny/shinycssloaders-demo/",
+      "BugReports": "https://github.com/daattali/shinycssloaders/issues",
+      "Depends": [
+        "R (>= 3.1)"
+      ],
+      "Imports": [
+        "digest",
+        "glue",
+        "grDevices",
+        "htmltools (>= 0.3.5)",
+        "shiny"
+      ],
+      "Suggests": [
+        "knitr",
+        "shinydisconnect",
+        "shinyjs"
+      ],
+      "RoxygenNote": "7.2.3",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Dean Attali [aut, cre] (Maintainer/developer of shinycssloaders since 2019, <https://orcid.org/0000-0002-5645-3493>), Andras Sali [aut] (Original creator of shinycssloaders package), Luke Hass [ctb, cph] (Author of included CSS loader code)",
+      "Maintainer": "Dean Attali <daattali@gmail.com>",
       "Repository": "CRAN"
     },
     "sourcetools": {
@@ -4295,6 +4502,36 @@
       "NeedsCompilation": "yes",
       "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>), Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>), Shelby Bearrows [ctb], https://github.com/mandreyel/ [cph] (mio library), Jukka Jylänki [cph] (grisu3 implementation), Mikkel Jørgensen [cph] (grisu3 implementation), Posit Software, PBC [cph, fnd]",
       "Maintainer": "Jennifer Bryan <jenny@posit.co>",
+      "Repository": "CRAN"
+    },
+    "waiter": {
+      "Package": "waiter",
+      "Version": "0.2.5",
+      "Source": "Repository",
+      "Title": "Loading Screen for 'Shiny'",
+      "Date": "2022-01-02",
+      "Authors@R": "c( person(given = \"John\", family = \"Coene\", role = c(\"aut\", \"cre\"), email = \"jcoenep@gmail.com\"), person(given = \"Jinhwan\", family = \"Kim\", role = \"ctb\", email = 'hwanistic@gmail.com'), person(given = \"Victor\", family = \"Granda\", role = c(\"ctb\"), email = \"victorgrandagarcia@gmail.com\", comment = c(ORCID = \"0000-0002-0469-1991\")))",
+      "Description": "Full screen and partial loading screens for 'Shiny' with spinners, progress bars, and notifications.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://waiter.john-coene.com/, https://github.com/JohnCoene/waiter",
+      "BugReports": "https://github.com/JohnCoene/waiter/issues",
+      "Encoding": "UTF-8",
+      "Imports": [
+        "R6",
+        "shiny",
+        "htmltools"
+      ],
+      "RoxygenNote": "7.1.2",
+      "Suggests": [
+        "httr",
+        "knitr",
+        "packer",
+        "rmarkdown"
+      ],
+      "VignetteBuilder": "knitr",
+      "NeedsCompilation": "no",
+      "Author": "John Coene [aut, cre], Jinhwan Kim [ctb], Victor Granda [ctb] (<https://orcid.org/0000-0002-0469-1991>)",
+      "Maintainer": "John Coene <jcoenep@gmail.com>",
       "Repository": "CRAN"
     },
     "withr": {
