@@ -69,13 +69,13 @@ ui <- dashboardPage(
     
     # Plotly - Sales Trends
     output$plotly <- renderPlotly({
-      retail_data |> 
+      data <- retail_data 
         arrange(InvoiceDate) |> 
         group_by(InvoiceDate) |> 
-        summarize(Revenue = sum(Revenue)) |> 
-        plot_ly(
-          x = InvoiceDate,
-          y = Revenue,
+        summarize(Revenue = sum(Revenue))
+        plot_ly(data,
+          x = ~InvoiceDate,
+          y = ~Revenue,
           type = "scatter",
           mode = "lines",
           hovertemplate = "Date: %{x}<br>Revenue: %{y:.2f}"
