@@ -11,6 +11,8 @@ retail_data <- retail_data |>
   filter(!is.na(`Customer ID`)) |>   # Remove missing customers
   mutate(Quantity = as.integer(Quantity)) |> 
   mutate(Price = as.numeric(gsub(",", ".", Price))) |> 
-  mutate(Revenue = Quantity * Price)  # Calculate revenue
+  mutate(Revenue = Quantity * Price) |> 
+  mutate(InvoiceDate = as.Date(InvoiceDate, "%d/%m/%Y %H:%M")) |> 
+  rename(Customer.ID = `Customer ID`)
 
 rio::export(retail_data, "data/online_retail_cleaned.csv")
