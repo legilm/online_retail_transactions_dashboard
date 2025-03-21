@@ -102,7 +102,6 @@ server <- function(input, output, session) {
   })
 
   observeEvent(input$filter_button, {
-    showLoadingButton("filter_button", progress = TRUE)
 
     data <- filtered_data()
 
