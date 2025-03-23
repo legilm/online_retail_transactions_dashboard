@@ -18,11 +18,15 @@ retail_data <- rio::import("data/online_retail_cleaned.csv")
 ui <- dashboardPage(
   dashboardHeader(title = "Online Retail Transactions"),
   dashboardSidebar(
+    width = 300,
     autoWaiter(),
     waiterPreloader(),
     sidebarMenu(
-      selectInput("country_filter", "Select Country",
-        choices = c("All", unique(retail_data$Country))
+      selectInput("country_filter", 
+                  "Select Country",
+                  choices = c("All", unique(retail_data$Country)),
+                  multiple = FALSE,
+                  selected = "All",
       ),
       loadingButton(
         "filter_button",
@@ -92,32 +96,35 @@ ui <- dashboardPage(
 
 
 server <- function(input, output, session) {
+  
   # Filter data based on selected country
   filtered_data <- eventReactive(input$filter_button, {
     if (input$country_filter == "All") {
       return(retail_data)
     } else {
-      return(retail_data[retail_data$Country == input$country_filter, ])
-    }
+          return(retail_data |> 
+                 filter(Country == input$country_filter))
+      }
   })
 
   observeEvent(input$filter_button, {
 
-    data <- filtered_data()
+  #  data <- filtered_data()
 
     resetLoadingButton("filter_button")
   })
 
   output$download_btn <- downloadHandler(
     filename = function() {
-      paste0(input$country_to_download, ".csv")  # Nome do arquivo baseado na seleção
+      paste0(input$country_to_download, " - ", Sys.Date(), " - Sales data", ".csv")  # File name based on selection
     },
     content = function(file) {
-      # Filtrar os dados com base na seleção do usuário
+      
+      # Filter data based on user selection
       data_to_download <- retail_data |> 
         filter(Country == input$country_to_download)
       
-      # Salvar os dados filtrados no arquivo de saída
+      # Save the filtered data in the output file
       rio::export(data_to_download, file, "csv")
     }
   )
