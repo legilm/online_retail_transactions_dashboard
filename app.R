@@ -11,17 +11,29 @@ library(dplyr)
 library(waiter)
 library(shinyFeedback)
 library(shinycssloaders)
-
+library(usethis)
+library(shinymanager)
+library(httr)
+library(jsonlite)
 
 retail_data <- rio::import("data/online_retail_cleaned.csv")
+
+api_key <- Sys.getenv("api_key")
 
 ui <- dashboardPage(
   dashboardHeader(title = "Online Retail Transactions"),
   dashboardSidebar(
     width = 300,
-    autoWaiter(),
     waiterPreloader(),
     sidebarMenu(
+      collapsed = TRUE,
+      dateRangeInput("dates", 
+                     label = h3("Date range"), 
+                     min = min(retail_data$InvoiceDate),
+                     max = max(retail_data$InvoiceDate),
+      hr(),
+      verbatimTextOutput("date_range_selected")
+      ),
       selectInput("country_filter", 
                   "Select Country",
                   choices = c("All", unique(retail_data$Country)),
@@ -41,7 +53,7 @@ ui <- dashboardPage(
                   c("United Kingdom", "France", "USA", "Belgium", "Australia", "EIRE", "Germany", "Portugal", "Japan", "Denmark", "Netherlands", "Poland", "Spain", "Channel Islands", "Italy", "Cyprus", "Greece", "Norway", "Austria", "Sweden", "United Arab Emirates", "Finland", "Switzerland", "Unspecified", "Nigeria", "Malta", "RSA", "Singapore", "Bahrain", "Thailand", "Israel", "Lithuania", "West Indies", "Korea", "Brazil", "Canada", "Iceland", "Lebanon", "Saudi Arabia", "Czech Republic", "European Community")
                   ),
       downloadButton("download_btn",
-                     "Download"))
+                     "Download")),
   ),
   dashboardBody(
     fluidRow(
@@ -97,6 +109,19 @@ ui <- dashboardPage(
 
 server <- function(input, output, session) {
   
+  weather <- eventReactive(input$filter_button, {
+    if (input$country_filter == "All") {
+      return(retail_data)
+    } else {
+      return(retail_data |> 
+               filter(Country == input$country_filter))
+    }
+  })
+  
+
+
+    # https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={current}&appid={626eba3ab8885e11d774a6c0c7109729}
+  
   # Filter data based on selected country
   filtered_data <- eventReactive(input$filter_button, {
     if (input$country_filter == "All") {
@@ -106,6 +131,10 @@ server <- function(input, output, session) {
                  filter(Country == input$country_filter))
       }
   })
+  
+  # You can access the values of the widget (as a vector of Dates)
+  # with input$dates, e.g.
+  output$date_range_selected <- renderPrint({ input$dates })
 
   observeEvent(input$filter_button, {
 
