@@ -24,7 +24,7 @@ ui <- dashboardPage(
   dashboardHeader(title = "Online Retail Transactions"),
   dashboardSidebar(
     width = 300,
-    waiterPreloader(),
+    # waiterPreloader(),
     sidebarMenu(
       collapsed = TRUE,
       dateRangeInput("dates", 
@@ -120,8 +120,6 @@ server <- function(input, output, session) {
   
 
 
-    # https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={current}&appid={626eba3ab8885e11d774a6c0c7109729}
-  
   # Filter data based on selected country
   filtered_data <- eventReactive(input$filter_button, {
     if (input$country_filter == "All") {
